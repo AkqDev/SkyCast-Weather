@@ -133,43 +133,48 @@ h1 {
   right: -90%;
 }
 
-/* === Bottom Section (now in place of middle) === */
+/* === Bottom Section (Enhanced) === */
 .app .bottom {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2.5rem;              /* spacing between items */
   margin: 2rem auto;
   text-align: center;
   width: 100%;
-  padding: 1.5rem;
-  border-radius: 15px;
+  padding: 2rem;
+  border-radius: 20px;
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .app .bottom:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
 }
 
 .app .bottom div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease;
+  min-width: 100px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .app .bottom div:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  color: #00c3ff;  /* highlight on hover */
 }
 
 .app .bottom p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .bold {
   font-weight: 700;
   font-size: 1.8rem;
+  margin-bottom: 0.3rem;
 }
 
 /* === Responsive Design === */
