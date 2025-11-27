@@ -58,7 +58,6 @@ function App() {
               </div>
             </div>
 
-            {/* Bottom moved here (no more middle) */}
             <div className="bottom">
               <div className="feels">
                 <p className="bold">{weather.feelslike}°C</p>
