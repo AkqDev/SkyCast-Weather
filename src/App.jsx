@@ -18,6 +18,7 @@ function App() {
         return;
       }
 
+      {/*Function */}
       setWeather({
         name: data.name,
         temp: data.main.temp,
