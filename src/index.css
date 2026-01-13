@@ -304,7 +304,6 @@ h1 {
   }
 }
 
-/* Fix for landscape mode on mobile */
 @media (max-height: 600px) and (orientation: landscape) {
   .app {
     min-height: auto;
